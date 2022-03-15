@@ -1,9 +1,8 @@
 package main
 
-import (
-	"github.com/plusbeauxjours/GO-crypto/rest"
-)
+import "github.com/plusbeauxjours/GO-crypto/cli"
 
 func main() {
-	rest.Start(4000)
+	cli.Start()
+
 }
