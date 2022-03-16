@@ -1,11 +1,11 @@
 package main
 
 import (
-	"github.com/plusbeauxjours/GO-crypto/blockchain"
 	"github.com/plusbeauxjours/GO-crypto/cli"
+	"github.com/plusbeauxjours/GO-crypto/db"
 )
 
 func main() {
-	blockchain.Blockchain()
+	defer db.Close()
 	cli.Start()
 }
